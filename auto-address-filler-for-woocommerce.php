@@ -13,7 +13,7 @@
  * @package           Auto_Address_Filler_For_Woocommerce
  *
  * @wordpress-plugin
- * Plugin Name:       WC Auto Address Filler
+ * Plugin Name:       Auto Address Filler For WooCommerce
  * Plugin URI:        https://github.com/s-azizkhan/auto-address-filler-for-woocommerce
  * Description:       Automate WooCommerce checkout with Auto-Address-Filler-For-Woocommerce. Streamlines shipping and billing address entry, saving time and improving user experience. Hassle-free integration for a smoother, error-free checkout process.
  * Version:           1.0.0
