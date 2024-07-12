@@ -1,4 +1,4 @@
-=== WC Auto Address Filler ===
+=== Auto Address Filler For WooCommerce ===
 Contributors: aziz22
 Donate link: https://github.com/s-azizkhan
 Tags: comments, spam
@@ -41,10 +41,6 @@ A: Once activated, Auto-Address-Filler-For-Woocommerce automatically fills in sh
 = Is this plugin compatible with the latest versions of WordPress and WooCommerce? =
 
 A: Yes, this plugin is tested and compatible with WordPress 5.8 and WooCommerce 5.5.
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
 
 == Screenshots ==
 
