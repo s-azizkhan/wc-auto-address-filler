@@ -67,8 +67,8 @@ class Auto_Address_Filler_For_Woocommerce {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		if ( defined( 'Auto_Address_Filler_For_Woocommerce_VERSION' ) ) {
-			$this->version = Auto_Address_Filler_For_Woocommerce_VERSION;
+		if ( defined( 'AUTO_ADDRESS_FILLER_FOR_WOOCOMMERCE_VERSION' ) ) {
+			$this->version = AUTO_ADDRESS_FILLER_FOR_WOOCOMMERCE_VERSION;
 		} else {
 			$this->version = '1.0.0';
 		}
