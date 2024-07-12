@@ -10,7 +10,7 @@
  *
  * @link              https://github.com/s-azizkhan
  * @since             1.0.0
- * @package           Wc_Auto_Address_Filler
+ * @package           Auto_Address_Filler_For_Woocommerce
  *
  * @wordpress-plugin
  * Plugin Name:       WC Auto Address Filler
@@ -42,22 +42,22 @@ define( 'ADFFW_DOMAIN', 'ADFFW' );
  * The code that runs during plugin activation.
  * This action is documented in includes/class-auto-address-filler-for-woocommerce-activator.php
  */
-function activate_wc_auto_address_filler() {
+function activate_Auto_Address_Filler_For_Woocommerce() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-auto-address-filler-for-woocommerce-activator.php';
-	Wc_Auto_Address_Filler_Activator::activate();
+	Auto_Address_Filler_For_Woocommerce_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-auto-address-filler-for-woocommerce-deactivator.php
  */
-function deactivate_wc_auto_address_filler() {
+function deactivate_Auto_Address_Filler_For_Woocommerce() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-auto-address-filler-for-woocommerce-deactivator.php';
-	Wc_Auto_Address_Filler_Deactivator::deactivate();
+	Auto_Address_Filler_For_Woocommerce_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_wc_auto_address_filler' );
-register_deactivation_hook( __FILE__, 'deactivate_wc_auto_address_filler' );
+register_activation_hook( __FILE__, 'activate_Auto_Address_Filler_For_Woocommerce' );
+register_deactivation_hook( __FILE__, 'deactivate_Auto_Address_Filler_For_Woocommerce' );
 
 /**
  * The core plugin class that is used to define internationalization,
@@ -74,10 +74,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-auto-address-filler-for-wo
  *
  * @since    1.0.0
  */
-function run_wc_auto_address_filler() {
+function run_Auto_Address_Filler_For_Woocommerce() {
 
-	$plugin = new Wc_Auto_Address_Filler();
+	$plugin = new Auto_Address_Filler_For_Woocommerce();
 	$plugin->run();
 
 }
-run_wc_auto_address_filler();
+run_Auto_Address_Filler_For_Woocommerce();
