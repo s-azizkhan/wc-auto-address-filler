@@ -9,8 +9,8 @@
  * @link       https://github.com/s-azizkhan
  * @since      1.0.0
  *
- * @package    Wc_Auto_Address_Filler
- * @subpackage Wc_Auto_Address_Filler/includes
+ * @package    Auto_Address_Filler_For_Woocommerce
+ * @subpackage Auto_Address_Filler_For_Woocommerce/includes
  */
 
 /**
@@ -23,11 +23,11 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Wc_Auto_Address_Filler
- * @subpackage Wc_Auto_Address_Filler/includes
+ * @package    Auto_Address_Filler_For_Woocommerce
+ * @subpackage Auto_Address_Filler_For_Woocommerce/includes
  * @author     Aziz Khan <sakataziznkhan1@gmail.com>
  */
-class Wc_Auto_Address_Filler {
+class Auto_Address_Filler_For_Woocommerce {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -35,7 +35,7 @@ class Wc_Auto_Address_Filler {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      Wc_Auto_Address_Filler_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      Auto_Address_Filler_For_Woocommerce_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -67,12 +67,12 @@ class Wc_Auto_Address_Filler {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		if ( defined( 'WC_AUTO_ADDRESS_FILLER_VERSION' ) ) {
-			$this->version = WC_AUTO_ADDRESS_FILLER_VERSION;
+		if ( defined( 'Auto_Address_Filler_For_Woocommerce_VERSION' ) ) {
+			$this->version = Auto_Address_Filler_For_Woocommerce_VERSION;
 		} else {
 			$this->version = '1.0.0';
 		}
-		$this->plugin_name = 'wc-auto-address-filler';
+		$this->plugin_name = 'auto-address-filler-for-woocommerce';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -86,10 +86,10 @@ class Wc_Auto_Address_Filler {
 	 *
 	 * Include the following files that make up the plugin:
 	 *
-	 * - Wc_Auto_Address_Filler_Loader. Orchestrates the hooks of the plugin.
-	 * - Wc_Auto_Address_Filler_i18n. Defines internationalization functionality.
-	 * - Wc_Auto_Address_Filler_Admin. Defines all hooks for the admin area.
-	 * - Wc_Auto_Address_Filler_Public. Defines all hooks for the public side of the site.
+	 * - Auto_Address_Filler_For_Woocommerce_Loader. Orchestrates the hooks of the plugin.
+	 * - Auto_Address_Filler_For_Woocommerce_i18n. Defines internationalization functionality.
+	 * - Auto_Address_Filler_For_Woocommerce_Admin. Defines all hooks for the admin area.
+	 * - Auto_Address_Filler_For_Woocommerce_Public. Defines all hooks for the public side of the site.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -103,33 +103,33 @@ class Wc_Auto_Address_Filler {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wc-auto-address-filler-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-auto-address-filler-for-woocommerce-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wc-auto-address-filler-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-auto-address-filler-for-woocommerce-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wc-auto-address-filler-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-auto-address-filler-for-woocommerce-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-wc-auto-address-filler-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-auto-address-filler-for-woocommerce-public.php';
 
-		$this->loader = new Wc_Auto_Address_Filler_Loader();
+		$this->loader = new Auto_Address_Filler_For_Woocommerce_Loader();
 
 	}
 
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the Wc_Auto_Address_Filler_i18n class in order to set the domain and to register the hook
+	 * Uses the Auto_Address_Filler_For_Woocommerce_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
 	 * @since    1.0.0
@@ -137,7 +137,7 @@ class Wc_Auto_Address_Filler {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new Wc_Auto_Address_Filler_i18n();
+		$plugin_i18n = new Auto_Address_Filler_For_Woocommerce_i18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
@@ -152,7 +152,7 @@ class Wc_Auto_Address_Filler {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin = new Wc_Auto_Address_Filler_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_admin = new Auto_Address_Filler_For_Woocommerce_Admin( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
@@ -168,13 +168,13 @@ class Wc_Auto_Address_Filler {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new Wc_Auto_Address_Filler_Public( $this->get_plugin_name(), $this->get_version() );
+		$plugin_public = new Auto_Address_Filler_For_Woocommerce_Public( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 		
-		$this->loader->add_action( 'wp_ajax_'. WCAF_DOMAIN .'_get_user_location', $plugin_public, 'get_user_location_callback' );
-		$this->loader->add_action( 'wp_ajax_nopriv_'. WCAF_DOMAIN .'_get_user_location', $plugin_public, 'get_user_location_callback' );
+		$this->loader->add_action( 'wp_ajax_'. ADFFW_DOMAIN .'_get_user_location', $plugin_public, 'get_user_location_callback' );
+		$this->loader->add_action( 'wp_ajax_nopriv_'. ADFFW_DOMAIN .'_get_user_location', $plugin_public, 'get_user_location_callback' );
 	}
 
 	/**
@@ -201,7 +201,7 @@ class Wc_Auto_Address_Filler {
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    Wc_Auto_Address_Filler_Loader    Orchestrates the hooks of the plugin.
+	 * @return    Auto_Address_Filler_For_Woocommerce_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;

@@ -22,7 +22,7 @@
  * @link       https://github.com/s-azizkhan
  * @since      1.0.0
  *
- * @package    Wc_Auto_Address_Filler
+ * @package    Auto_Address_Filler_For_Woocommerce
  */
 
 // If uninstall not called from WordPress, then exit.

@@ -6,8 +6,8 @@
  * @link       https://github.com/s-azizkhan
  * @since      1.0.0
  *
- * @package    Wc_Auto_Address_Filler
- * @subpackage Wc_Auto_Address_Filler/includes
+ * @package    Auto_Address_Filler_For_Woocommerce
+ * @subpackage Auto_Address_Filler_For_Woocommerce/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      1.0.0
- * @package    Wc_Auto_Address_Filler
- * @subpackage Wc_Auto_Address_Filler/includes
+ * @package    Auto_Address_Filler_For_Woocommerce
+ * @subpackage Auto_Address_Filler_For_Woocommerce/includes
  * @author     Aziz Khan <sakataziznkhan1@gmail.com>
  */
-class Wc_Auto_Address_Filler_Deactivator {
+class Auto_Address_Filler_For_Woocommerce_Deactivator {
 
 	/**
 	 * Short Description. (use period)

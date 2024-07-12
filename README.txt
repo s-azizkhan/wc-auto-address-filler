@@ -8,11 +8,11 @@ Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Automate WooCommerce checkout with WC-Auto-Address-Filler. Streamline address entry, save time, and enhance user experience. Hassle-free integration.
+Automate WooCommerce checkout with Auto-Address-Filler-For-Woocommerce. Streamline address entry, save time, and enhance user experience. Hassle-free integration.
 
 == Description ==
 
-WC-Auto-Address-Filler is a time-saving plugin for WooCommerce that automates address entry during checkout. This seamless integration streamlines the process, reduces errors, and improves user experience.
+Auto-Address-Filler-For-Woocommerce is a time-saving plugin for WooCommerce that automates address entry during checkout. This seamless integration streamlines the process, reduces errors, and improves user experience.
 
 == Installation ==
 
@@ -36,7 +36,7 @@ e.g.
 
 = How does this plugin work? =
 
-A: Once activated, WC-Auto-Address-Filler automatically fills in shipping and billing addresses during the WooCommerce checkout process.
+A: Once activated, Auto-Address-Filler-For-Woocommerce automatically fills in shipping and billing addresses during the WooCommerce checkout process.
 
 = Is this plugin compatible with the latest versions of WordPress and WooCommerce? =
 
@@ -68,7 +68,7 @@ You can contribute to the development of this plugin on https://github.com/s-azi
 
 == License ==
 
-WC-Auto-Address-Filler is licensed under the GPL v3 or later.
+Auto Address Filler for WooCommerc is licensed under the GPL v3 or later.
 
 == Credits ==
 

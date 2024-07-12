@@ -6,8 +6,8 @@
  * @link       https://github.com/s-azizkhan
  * @since      1.0.0
  *
- * @package    Wc_Auto_Address_Filler
- * @subpackage Wc_Auto_Address_Filler/public
+ * @package    Auto_Address_Filler_For_Woocommerce
+ * @subpackage Auto_Address_Filler_For_Woocommerce/public
  */
 
 /**
@@ -18,11 +18,11 @@
  *
  * @version  1.0.0
  * @since    1.0.0
- * @package    Wc_Auto_Address_Filler
- * @subpackage Wc_Auto_Address_Filler/public
+ * @package    Auto_Address_Filler_For_Woocommerce
+ * @subpackage Auto_Address_Filler_For_Woocommerce/public
  * @author     Aziz Khan <sakataziznkhan1@gmail.com>
  */
-class Wc_Auto_Address_Filler_Public
+class Auto_Address_Filler_For_Woocommerce_Public
 {
 
 	/**
@@ -70,15 +70,15 @@ class Wc_Auto_Address_Filler_Public
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Wc_Auto_Address_Filler_Loader as all of the hooks are defined
+		 * defined in Auto_Address_Filler_For_Woocommerce_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Wc_Auto_Address_Filler_Loader will then create the relationship
+		 * The Auto_Address_Filler_For_Woocommerce_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
 
-		wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/wc-auto-address-filler-public.css', array(), $this->version, 'all');
+		wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/auto-address-filler-for-woocommerce-public.css', array(), $this->version, 'all');
 	}
 
 	/**
@@ -94,21 +94,21 @@ class Wc_Auto_Address_Filler_Public
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Wc_Auto_Address_Filler_Loader as all of the hooks are defined
+		 * defined in Auto_Address_Filler_For_Woocommerce_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Wc_Auto_Address_Filler_Loader will then create the relationship
+		 * The Auto_Address_Filler_For_Woocommerce_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
 
 		if (is_checkout()) {
-			wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/wc-auto-address-filler-public.js', array('jquery'), $this->version, false);
+			wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/auto-address-filler-for-woocommerce-public.js', array('jquery'), $this->version, false);
 
 			// Localize the script with the AJAX URL
 			wp_localize_script($this->plugin_name, 'ajax_object', array(
 				'ajax_url' => admin_url('admin-ajax.php'),
-				'action'   => WCAF_DOMAIN . '_get_user_location',
+				'action'   => ADFFW_DOMAIN . '_get_user_location',
 			));
 		}
 	}

@@ -6,8 +6,8 @@
  * @link       https://github.com/s-azizkhan
  * @since      1.0.0
  *
- * @package    Wc_Auto_Address_Filler
- * @subpackage Wc_Auto_Address_Filler/includes
+ * @package    Auto_Address_Filler_For_Woocommerce
+ * @subpackage Auto_Address_Filler_For_Woocommerce/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Wc_Auto_Address_Filler
- * @subpackage Wc_Auto_Address_Filler/includes
+ * @package    Auto_Address_Filler_For_Woocommerce
+ * @subpackage Auto_Address_Filler_For_Woocommerce/includes
  * @author     Aziz Khan <sakataziznkhan1@gmail.com>
  */
-class Wc_Auto_Address_Filler_Activator
+class Auto_Address_Filler_For_Woocommerce_Activator
 {
 
 	/**
@@ -44,7 +44,7 @@ class Wc_Auto_Address_Filler_Activator
 	{
 ?>
 		<div class="error">
-			<p><?php echo esc_html__('WC-Auto-Address-Filler requires WooCommerce to be installed and activated. The plugin has been deactivated.', 'wc-auto-address-filler'); ?></p>
+			<p><?php echo esc_html__('Auto-Address-Filler-For-Woocommerce requires WooCommerce to be installed and activated. The plugin has been deactivated.', 'auto-address-filler-for-woocommerce'); ?></p>
 		</div>
 <?php
 	}

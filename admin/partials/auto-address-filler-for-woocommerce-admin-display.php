@@ -8,8 +8,8 @@
  * @link       https://github.com/s-azizkhan
  * @since      1.0.0
  *
- * @package    Wc_Auto_Address_Filler
- * @subpackage Wc_Auto_Address_Filler/admin/partials
+ * @package    Auto_Address_Filler_For_Woocommerce
+ * @subpackage Auto_Address_Filler_For_Woocommerce/admin/partials
  */
 ?>
 

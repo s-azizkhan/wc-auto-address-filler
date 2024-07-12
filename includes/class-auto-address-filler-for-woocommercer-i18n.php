@@ -9,8 +9,8 @@
  * @link       https://github.com/s-azizkhan
  * @since      1.0.0
  *
- * @package    Wc_Auto_Address_Filler
- * @subpackage Wc_Auto_Address_Filler/includes
+ * @package    Auto_Address_Filler_For_Woocommerce
+ * @subpackage Auto_Address_Filler_For_Woocommerce/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Wc_Auto_Address_Filler
- * @subpackage Wc_Auto_Address_Filler/includes
+ * @package    Auto_Address_Filler_For_Woocommerce
+ * @subpackage Auto_Address_Filler_For_Woocommerce/includes
  * @author     Aziz Khan <sakataziznkhan1@gmail.com>
  */
-class Wc_Auto_Address_Filler_i18n {
+class Auto_Address_Filler_For_Woocommerce_i18n {
 
 
 	/**
@@ -35,7 +35,7 @@ class Wc_Auto_Address_Filler_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'wc-auto-address-filler',
+			'auto-address-filler-for-woocommercer',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);
