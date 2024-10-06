@@ -1,16 +1,12 @@
 <?php
 
 /**
- * The plugin bootstrap file
+ * Auto Address Filler For WooCommerce
  *
- * This file is read by WordPress to generate the plugin information in the plugin
- * admin area. This file also includes all of the dependencies used by the plugin,
- * registers the activation and deactivation functions, and defines a function
- * that starts the plugin.
- *
- * @link              https://github.com/s-azizkhan
- * @since             1.0.0
  * @package           Auto_Address_Filler_For_Woocommerce
+ * @author            Aziz Khan
+ * @copyright         2024 s-azizkhan
+ * @license           GPL-2.0-or-later
  *
  * @wordpress-plugin
  * Plugin Name:       Auto Address Filler For WooCommerce
@@ -23,6 +19,7 @@
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       auto-address-filler-for-woocommerce
  * Domain Path:       /languages
+ * Requires Plugins:  woocommerce
  */
 
 // If this file is called directly, abort.
@@ -74,10 +71,13 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-auto-address-filler-for-wo
  *
  * @since    1.0.0
  */
-function run_Auto_Address_Filler_For_Woocommerce() {
+function adffw_init() {
 
-	$plugin = new Auto_Address_Filler_For_Woocommerce();
-	$plugin->run();
+	 // Initialize the plugin
+	 if (class_exists('Auto_Address_Filler_For_Woocommerce')) {
+		$plugin = new Auto_Address_Filler_For_Woocommerce();
+		$plugin->run();
+    }
 
 }
-run_Auto_Address_Filler_For_Woocommerce();
+adffw_init();

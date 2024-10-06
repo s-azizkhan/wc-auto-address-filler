@@ -1,10 +1,11 @@
 === Auto Address Filler For WooCommerce ===
 Contributors: aziz22
 Donate link: https://github.com/s-azizkhan
-Tags: comments, spam
-Requires at least: 3.0.1
-Tested up to: 3.4
-Stable tag: 4.3
+Tags: woocommerce, auto-addrss-fill, checkout
+Requires at least: 5.0
+Tested up to: 6.6
+Requires PHP: 7.2
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,10 +16,6 @@ Automate WooCommerce checkout with Auto-Address-Filler-For-Woocommerce. Streamli
 Auto-Address-Filler-For-Woocommerce is a time-saving plugin for WooCommerce that automates address entry during checkout. This seamless integration streamlines the process, reduces errors, and improves user experience.
 
 == Installation ==
-
-This section describes how to install the plugin and get it working.
-
-e.g.
 
 1. Download the plugin ZIP file.
 2. Log in to your WordPress dashboard.
@@ -71,6 +68,11 @@ Auto Address Filler for WooCommerc is licensed under the GPL v3 or later.
 * This plugin was developed by S.Aziz Khan.
 * This plugin uses the GeoPlugin API (https://www.geoplugin.com/) for geolocation data.
 * Map data and services are provided by OpenStreetMap (https://www.openstreetmap.org/).
+
+== Author ==
+
+**Author:** S.Aziz Khan
+**Author URI:** [https://github.com/s-azizkhan](https://github.com/s-azizkhan)
 
 == Note ==
 
