@@ -55,7 +55,6 @@
     // Function to trigger the WooCommerce AJAX call & autofill
     async function autofillUserLocation() {
         const data = await getUserLocation();
-        console.log(data);
         // list of input element
         const city = $('#billing_city');
         const countryCode = $('#billing_country');
@@ -63,7 +62,7 @@
         const postcode = $('#billing_postcode');
         const billingAddress1 = $('#billing_address_1');
         const streetAddress = `${data.address.leisure}, ${data.address.road}, ${data.address.suburb}`;
-        //if (isInputEmpty(city))
+        
         city.val(data.city).trigger('change');;
         countryCode.val(data.countryCode).trigger('change');
         regionCode.val(data.regionCode).trigger('change');
